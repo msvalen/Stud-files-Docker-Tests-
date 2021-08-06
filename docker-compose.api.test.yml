@@ -1,0 +1,28 @@
+services:
+  api:
+    container_name: test_api
+    environment: 
+      - PGUSER=tester
+      - PGHOST=db
+      - PGPASSWORD=password
+      - PGDATABASE=database_test
+      - PGPORT=5432
+      - NODE_ENV=test
+      - SECRET=my_token_super_secret_password_(just_in_case)
+    command: bash -c "npm install && npm test"
+    depends_on:
+      - db
+    tty: true
+  db:
+    container_name: test_db
+    volumes:
+      - "test_db:/var/lib/postgresql/data"
+    environment: 
+      - POSTGRES_DB=database_test
+      - POSTGRES_PASSWORD=password
+      - PGUSER=tester
+volumes:
+  test_db:
+networks: 
+  default:
+    name: api_test

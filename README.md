@@ -11,7 +11,7 @@ It contains:
   1. clone Repository in your folder of preference with `git clone <this url>` or the branch with `git clone -b <branchname> --single-branch <this url>`
   2. `git remote add project <the url of your project>`
   3. Change the remote:
-    1. `git add .` 
+    1. `git add .`
     2. `git commit -m 'First commit`
     3. `git push --set-upstream project main`
   4. `git remote rm origin`
