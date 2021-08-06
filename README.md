@@ -10,8 +10,9 @@ It contains:
 ## Installation
   1. clone Repository in your folder of preference with `git clone <this url>` or the branch with `git clone -b <branchname> --single-branch <this url>`
   2. `git remote add project <the url of your project>`
-  3. `git push --set-upstream project main 
-      git add . 
-      git commit -m 'First commit
-      git push`
+  3. Change the remote:
+    3.1. `git push --set-upstream project main`  
+    3.2. `git add .` 
+    3.3. `git commit -m 'First commit`
+    3.4. `git push`
   4. `git remote rm origin`
