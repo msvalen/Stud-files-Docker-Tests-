@@ -8,8 +8,8 @@ It contains:
   - All the stud files and node configuration of a client that is react based
 
 ## Installation
-  1. clone Repository in your folder of preference with `git clone <this url>` or the branch with `git clone -b <branchname> --single-branch <this url>
-  2. `git remote add project <the url of your project>
+  1. clone Repository in your folder of preference with `git clone <this url>` or the branch with `git clone -b <branchname> --single-branch <this url>`
+  2. `git remote add project <the url of your project>`
   3. `git push --set-upstream project main 
       git add . 
       git commit -m 'First commit
